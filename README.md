@@ -1,5 +1,6 @@
 # GNR650_Perceiver_23d1387_24d0295
-Perceiver course project for GNR650 fulfillment
+In this repository, we tried replicating the 'Perceiver: General Perception with Iterative Attention' paper, which can be read here (https://arxiv.org/pdf/2103.03206).
+
 
 
 
