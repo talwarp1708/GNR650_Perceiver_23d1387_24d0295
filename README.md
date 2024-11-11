@@ -17,6 +17,8 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 
 # Data Set
 - The dataset can be downloaded from following  :: https://huggingface.co/datasets/torchgeo/million-aid/tree/main/train
+- Training details and hyperparameters can be found in the pdf file (GNR650_Perceiver_23d1387_24d0295/Project-Preceiver_Details.pdf)
+
   
 ![image](https://github.com/user-attachments/assets/2502f18c-92f1-4952-9e47-7e2c12d657ab)
 
