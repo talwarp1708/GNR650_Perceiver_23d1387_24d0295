@@ -35,6 +35,8 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 - View the results in the output_filename for loss and accruacy results during training. The validation results are available on command line
 
 # Model Architecture
+**The model is defined in the Perceiver_23D1387_24D0295.ipynb/.py file.**
+
 <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/91e9fdd2-ed7c-4fae-943a-d8e861b9eb92">
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/9d4a637b-2339-4271-a240-6048e98d04e7">
