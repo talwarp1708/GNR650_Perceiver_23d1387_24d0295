@@ -31,6 +31,47 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 # Model Architecture
 <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/91e9fdd2-ed7c-4fae-943a-d8e861b9eb92">
 
+PerceiverForImageClassificationLearned
+│
+└── perceiver: PerceiverModel
+    │
+    ├── input_preprocessor: PerceiverImagePreprocessor
+    │   ├── convnet_1x1: Conv2d(3, 256, kernel_size=(1, 1))
+    │   ├── position_embeddings: PerceiverTrainablePositionEncoding
+    │   └── positions_projection: Linear(256 → 256)
+    │
+    ├── embeddings: PerceiverEmbeddings
+    │
+    ├── encoder: PerceiverEncoder
+    │   ├── cross_attention: PerceiverLayer
+    │   │   ├── attention: PerceiverAttention
+    │   │   │   ├── self_attention: PerceiverSelfAttention
+    │   │   │   │   ├── layernorm1: LayerNorm(1024)
+    │   │   │   │   ├── layernorm2: LayerNorm(512)
+    │   │   │   │   ├── query: Linear(1024 → 512)
+    │   │   │   │   ├── key: Linear(512 → 512)
+    │   │   │   │   ├── value: Linear(512 → 512)
+    │   │   │   │   └── dropout: Dropout(p=0.1)
+    │   │   │   └── output: Linear(512 → 1024)
+    │   │   ├── layernorm: LayerNorm(1024)
+    │   │   └── mlp: PerceiverMLP
+    │   │       ├── dense1: Linear(1024 → 1024)
+    │   │       └── dense2: Linear(1024 → 1024)
+    │   │
+    │   └── self_attends: ModuleList(6 x PerceiverLayer)
+    │
+    └── decoder: PerceiverClassificationDecoder
+        └── decoder: PerceiverBasicDecoder
+            ├── output_position_encodings: PerceiverTrainablePositionEncoding
+            ├── decoding_cross_attention: PerceiverLayer
+            │   ├── self_attention: PerceiverSelfAttention
+            │   │   ├── layernorm1: LayerNorm(1024)
+            │   │   ├── layernorm2: LayerNorm(1024)
+            │   │   ├── query, key, value: Linear(1024 → 1024)
+            │   │   └── dropout: Dropout(p=0.1)
+            │   └── output: Linear(1024 → 1024)
+            └── final_layer: Linear(1024 → 51)
+
 # Training Results 
 - Loss Curve
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/86a9f4e1-3006-408d-9295-c4de5587c076">
