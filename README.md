@@ -74,10 +74,6 @@ In summary, the components in the provided diagram match the Perceiver model as 
 - **Final Cross-Attention and Transformation**: `decoder` and final `cross_attention` in `PerceiverClassificationDecoder`
 - **Logits Output**: Final linear layer
 
-![image](https://github.com/user-attachments/assets/75d15e68-05f4-4d37-88a4-60a04e0401c0)
-
-
-
 # Training Results 
 - Loss Curve
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/86a9f4e1-3006-408d-9295-c4de5587c076">
