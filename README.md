@@ -33,11 +33,13 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/9d4a637b-2339-4271-a240-6048e98d04e7">
 
+
+
+
 - Explanation :
-- The diagram represents the Perceiver architecture for image classification. Let's break down and match the key components in the diagram to the structure of `PerceiverForImageClassificationLearned`:
 
 1. **Input Image (224 * 224 * 3)**:
-   - This represents the image input with dimensions \( 224 \times 224 \times 3 \) (height, width, color channels).
+   - This represents the image input with dimensions \( 224 \times 224 \times 3 \) (height, width, color channels) from **Million-AID** dataset.
 
 2. **Byte Array (M × C)**:
    - The input image is transformed into a **byte array** with dimensions \( M = 224 \times 224 \times 256 \). Here, each pixel is encoded into a higher-dimensional embedding space (256 channels).
@@ -48,31 +50,31 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 3. **Latent Array (N × D)**:
    - This is the **latent array** with dimensions \( N = 1024 \) and \( D \) matching the hidden dimension of the model (1024 here).
    - This latent array is initialized and repeatedly processed with **cross-attention** and **latent transformer** layers.
-   - This corresponds to the **latent initialization** in the model and serves as the main space for learned representations.
+   - This corresponds to the **latent initialization** in the model and is the alike the **hidden state** of RCNN.
 
 4. **Cross-Attention and Latent Transformer Layers**:
    - The **cross-attention** layers map between the input byte array and the latent array by aligning relevant features.
-   - The **latent transformer** layers (self-attention and MLP) perform repeated transformations on the latent array to refine it.
+   - The **latent transformer** layers (self-attention and MLP) perform repeated transformations on the latent array.
    - This is represented in the model by:
      - `cross_attention`: The initial cross-attention layers between the byte array and the latent array.
-     - `self_attends`: Six stacked PerceiverLayers that refine the latent representations.
+     - `self_attends`: These are stacked PerceiverLayers that refine the latent representations.
 
 5. **Final Cross-Attention and Transformation**:
-   - Another cross-attention step aligns the final latent representation with the classification task.
+   - Final cross-attention step aligns the final latent representation with the classification task.
    - This part is handled by the **decoder** in the model (`PerceiverClassificationDecoder`), which includes a final cross-attention layer for decoding the latent representation.
 
 6. **Logits Output**:
    - The latent array is averaged, and the output layer (with dimensions corresponding to the number of classes, here 51) produces logits for classification.
-   - This is handled by the **final layer** in `PerceiverBasicDecoder`, which maps from the latent space dimension (1024) to the number of classes (51).
+   - This is handled by the **final layer** in `PerceiverBasicDecoder`, which maps from the latent space dimension (1024) to **51 classes** of Million-AID dataset.
 
-In summary, the components in the provided diagram match the Perceiver model as follows:
+To summarize:
 
 - **Input Image**: `input_preprocessor`
 - **Byte Array**: `Conv2d`, `position_embeddings`
 - **Latent Array**: Latent representation initialized in `PerceiverModel`
 - **Cross-Attention and Latent Transformer Layers**: `cross_attention` and `self_attends`
 - **Final Cross-Attention and Transformation**: `decoder` and final `cross_attention` in `PerceiverClassificationDecoder`
-- **Logits Output**: Final linear layer
+- **Logits Output**: Final Fully Connected Layer to align to **51 classes** of Million-AID dataset
 
 # Training Results 
 - Loss Curve
