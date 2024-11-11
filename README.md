@@ -34,7 +34,7 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/9d4a637b-2339-4271-a240-6048e98d04e7">
 
 
-\\ 
+
 
 
 # Explanation 
