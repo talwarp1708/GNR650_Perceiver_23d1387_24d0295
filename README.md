@@ -29,7 +29,7 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 - View the results in the output_filename for loss and accruacy results during training. The validation results are available on command line
 
 # Model Architecture
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/91e9fdd2-ed7c-4fae-943a-d8e861b9eb92">
+<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/91e9fdd2-ed7c-4fae-943a-d8e861b9eb92">
 
 # Training Results 
 - Loss Curve
@@ -40,6 +40,8 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 
 # Testing Results
 ![image](https://github.com/user-attachments/assets/3024fb93-0886-4817-a338-8b55375009dd)
+
+
 
 
 
