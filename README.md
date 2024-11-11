@@ -28,8 +28,23 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 # Results
 - View the results in the output_filename for loss and accruacy results during training. The validation results are available on command line
 
-# Training Results 
+# Model Architecture
 <img width="386" alt="image" src="https://github.com/user-attachments/assets/91e9fdd2-ed7c-4fae-943a-d8e861b9eb92">
+
+# Training Results 
+- Loss Curve
+<img width="325" alt="image" src="https://github.com/user-attachments/assets/86a9f4e1-3006-408d-9295-c4de5587c076">
+
+- Accuracy Curve
+<img width="326" alt="image" src="https://github.com/user-attachments/assets/73fa4d93-195c-42a3-880b-d9acc9e4184b">
+
+# Testing Results
+![image](https://github.com/user-attachments/assets/3024fb93-0886-4817-a338-8b55375009dd)
+
+
+
+
+
 
 
 
