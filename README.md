@@ -15,6 +15,12 @@ pip install -r requirements.txt
 or Uncomment the first line as mentioned in the ipynb file and execute 
 !pip install torchgeo perceiver-pytorch evaluate datasets 
 
+# Data Set
+- The dataset can be downloaded from following  :: https://huggingface.co/datasets/torchgeo/million-aid/tree/main/train
+  
+![image](https://github.com/user-attachments/assets/2502f18c-92f1-4952-9e47-7e2c12d657ab)
+
+
 # Usage
 - Update the root folder in Perceiver_23D1387_24D0295.ipynb/.py file, which contains the train.zip file of CustomMillionAID train_ds = CustomMillionAID(root='./data', task="multi-class", split="train")
 
@@ -76,11 +82,6 @@ To summarize:
 - **Cross-Attention and Latent Transformer Layers**: `cross_attention` and `self_attends`
 - **Final Cross-Attention and Transformation**: `decoder` and final `cross_attention` in `PerceiverClassificationDecoder`
 - **Logits Output**: Final Fully Connected Layer to align to **51 classes** of Million-AID dataset
-
-# Data Set
-
-![image](https://github.com/user-attachments/assets/2502f18c-92f1-4952-9e47-7e2c12d657ab)
-
 
 # Training Results 
 - Loss Curve
