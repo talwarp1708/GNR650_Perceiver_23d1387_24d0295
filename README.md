@@ -77,6 +77,11 @@ To summarize:
 - **Final Cross-Attention and Transformation**: `decoder` and final `cross_attention` in `PerceiverClassificationDecoder`
 - **Logits Output**: Final Fully Connected Layer to align to **51 classes** of Million-AID dataset
 
+# Data Set
+
+![image](https://github.com/user-attachments/assets/2502f18c-92f1-4952-9e47-7e2c12d657ab)
+
+
 # Training Results 
 - Loss Curve
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/86a9f4e1-3006-408d-9295-c4de5587c076">
