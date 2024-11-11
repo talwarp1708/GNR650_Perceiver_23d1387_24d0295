@@ -1,11 +1,11 @@
 # GNR650_Perceiver_23d1387_24d0295
 ## Paper
 
-Title: Perceiver: General Perception with Iterative Attention
-Authors: Andrew Jaegle, Felix Gimeno, Andrew Brock, Andrew Zisserman, Oriol Vinyals, Joao Carreira
-Link: https://arxiv.org/pdf/2103.03206
-Tags: ViT, Transformers
-Year: 2021
+- Title: Perceiver: General Perception with Iterative Attention
+- Authors: Andrew Jaegle, Felix Gimeno, Andrew Brock, Andrew Zisserman, Oriol Vinyals, Joao Carreira
+- Link: https://arxiv.org/pdf/2103.03206
+- Tags: ViT, Transformers
+- Year: 2021
 
 
 
