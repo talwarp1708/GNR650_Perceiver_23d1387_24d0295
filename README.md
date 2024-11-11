@@ -1,5 +1,11 @@
 # GNR650_Perceiver_23d1387_24d0295
-In this repository, we tried replicating the 'Perceiver: General Perception with Iterative Attention' paper, which can be read here (https://arxiv.org/pdf/2103.03206).
+##**Paper**
+Title: Perceiver: General Perception with Iterative Attention
+Authors: Andrew Jaegle, Felix Gimeno, Andrew Brock, Andrew Zisserman, Oriol Vinyals, Joao Carreira
+Link: https://arxiv.org/pdf/2103.03206
+Tags: ViT, Transformers
+Year: 2021
+
 
 
 
