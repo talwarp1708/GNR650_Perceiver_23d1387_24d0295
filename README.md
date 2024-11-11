@@ -26,7 +26,7 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 - Execute the file .py or .ipynb file
 
 # Results
--View the results in the output_filename for loss and accruacy results during training. The validation results are available on command line
+- View the results in the output_filename for loss and accruacy results during training. The validation results are available on command line
 
 
 Thank you for having a look at this repository. I hope you had a good time and great learning. This work is done by Priyanka Talwar and Danny Savla (collaborator of this repository) to fulfill the course work GNR650 — Advanced Topics in Deep Learning for Image Analysis by Prof. Biplab Banerjee.
