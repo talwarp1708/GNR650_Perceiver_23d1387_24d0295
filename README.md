@@ -40,10 +40,10 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 # Explanation 
 
 1. **Input Image (224 * 224 * 3)**:
-   - This represents the image input with dimensions \( 224 \times 224 \times 3 \) (height, width, color channels) from **Million-AID** dataset.
+   - This represents the image input with dimensions \( 224 * 224 * 3 \) (height, width, color channels) from **Million-AID** dataset.
 
 2. **Byte Array (M × C)**:
-   - The input image is transformed into a **byte array** with dimensions \( M = 224 \times 224 \times 256 \). Here, each pixel is encoded into a higher-dimensional embedding space (256 channels).
+   - The input image is transformed into a **byte array** with dimensions \( M = 224 * 224 * 256 \). Here, each pixel is encoded into a higher-dimensional embedding space (256 channels).
    - This corresponds to the **input preprocessor** step in the model: 
      - `Conv2d(3, 256, kernel_size=(1, 1))` converts the 3-channel input to 256 channels.
      - `PerceiverTrainablePositionEncoding` and `positions_projection` add positional information and map to the embedding space.
