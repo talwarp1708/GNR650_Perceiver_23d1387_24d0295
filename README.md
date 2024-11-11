@@ -34,8 +34,10 @@ or Uncomment the first line as mentioned in the ipynb file and execute
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/9d4a637b-2339-4271-a240-6048e98d04e7">
 
 
-<br/>
-# Explanation :
+\\ 
+
+
+# Explanation 
 
 1. **Input Image (224 * 224 * 3)**:
    - This represents the image input with dimensions \( 224 \times 224 \times 3 \) (height, width, color channels) from **Million-AID** dataset.
